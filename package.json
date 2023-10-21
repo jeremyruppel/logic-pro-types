@@ -1,0 +1,22 @@
+{
+  "name": "tslogic",
+  "version": "1.0.0",
+  "description": "Type definitions Logic Pro's Scripter",
+  "author": "Jeremy Ruppel",
+  "types": "./types/index.d.ts",
+  "scripts": {
+    "tsc": "tsc --noEmit types/index.d.ts"
+  },
+  "files": [
+    "types",
+    "README.md"
+  ],
+  "keywords": [],
+  "license": "ISC",
+  "prettier": {
+    "semi": false
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
