@@ -1,6 +1,6 @@
 # tslogic
 
-Type defitions for Logic Pro' Scripter. Check out the [API Docs](./docs)
+Type defitions for Logic Pro' Scripter.
 
 ### usage
 
@@ -34,3 +34,9 @@ Finally, in your typescript source files, reference the `tslogic` types like:
 ```ts
 /// <reference types="tslogic" />
 ```
+
+### docs
+
+Browseable documentation can be found [here][docs].
+
+[docs]: https://jeremyruppel.github.io/tslogic/
