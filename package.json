@@ -5,6 +5,7 @@
   "author": "Jeremy Ruppel",
   "types": "./types/index.d.ts",
   "scripts": {
+    "docs": "typedoc types/*.d.ts",
     "tsc": "tsc --noEmit types/index.d.ts"
   },
   "files": [
@@ -17,6 +18,7 @@
     "semi": false
   },
   "devDependencies": {
+    "typedoc": "^0.25.2",
     "typescript": "^5.2.2"
   }
 }
