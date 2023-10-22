@@ -1,5 +1,5 @@
 {
-  "name": "tslogic",
+  "name": "logic-pro-types",
   "version": "1.0.0",
   "description": "Type definitions Logic Pro's Scripter",
   "author": "Jeremy Ruppel",
@@ -12,7 +12,12 @@
     "types",
     "README.md"
   ],
-  "keywords": [],
+  "keywords": [
+    "logic",
+    "pro",
+    "scripter",
+    "script"
+  ],
   "license": "ISC",
   "prettier": {
     "semi": false
