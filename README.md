@@ -7,7 +7,6 @@ Type defitions for Logic Pro' Scripter.
 Now you can do this, complete with type hints:
 
 ```ts
-// @ts-check
 /// <reference types="logic-pro-types" />
 const PluginParameters: PluginParameters = [
   {
@@ -60,4 +59,4 @@ Then, in your typescript source files, reference the `logic-pro-types` types lik
 
 Browseable documentation can be found [here][docs].
 
-[docs]: https://jeremyruppel.github.io/tslogic/
+[docs]: https://jeremyruppel.github.io/logic-pro-types/
