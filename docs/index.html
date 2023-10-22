@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>tslogic</title><meta name="description" content="Documentation for tslogic"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
+<!DOCTYPE html><html class="default" lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>logic-pro-types</title><meta name="description" content="Documentation for logic-pro-types"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os"</script><header class="tsd-page-toolbar">
 <div class="tsd-toolbar-contents container">
 <div class="table-cell" id="tsd-search" data-base=".">
 <div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div>
@@ -6,14 +6,27 @@
 <div id="tsd-toolbar-links"></div></div>
 <ul class="results">
 <li class="state loading">Preparing search index...</li>
-<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">tslogic</a></div>
+<li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">logic-pro-types</a></div>
 <div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="#icon-menu"></use></svg></a></div></div></header>
 <div class="container container-main">
 <div class="col-content">
 <div class="tsd-page-title">
-<h2>tslogic</h2></div>
-<div class="tsd-panel tsd-typography"><a id="md:tslogic" class="tsd-anchor"></a><h1><a href="#md:tslogic">tslogic</a></h1><p>Type defitions for Logic Pro&#39; Scripter.</p>
-<a id="md:events" class="tsd-anchor"></a><h1><a href="#md:events">Events</a></h1></div></div>
+<h2>logic-pro-types</h2></div>
+<div class="tsd-panel tsd-typography"><a id="md:logic-pro-types" class="tsd-anchor"></a><h1><a href="#md:logic-pro-types">logic-pro-types</a></h1><p>Type defitions for Logic Pro&#39; Scripter.</p>
+<a id="md:usage" class="tsd-anchor"></a><h3><a href="#md:usage">usage</a></h3><p>Now you can do this, complete with type hints:</p>
+<pre><code class="language-ts"><span class="hl-0">// @ts-check</span><br/><span class="hl-0">/// </span><span class="hl-1">&lt;</span><span class="hl-2">reference</span><span class="hl-0"> </span><span class="hl-3">types</span><span class="hl-4">=</span><span class="hl-5">&quot;logic-pro-types&quot;</span><span class="hl-0"> </span><span class="hl-1">/&gt;</span><br/><span class="hl-6">const</span><span class="hl-4"> </span><span class="hl-7">PluginParameters</span><span class="hl-4">: </span><span class="hl-8">PluginParameters</span><span class="hl-4"> = [</span><br/><span class="hl-4">  {</span><br/><span class="hl-4">    </span><span class="hl-9">name:</span><span class="hl-4"> </span><span class="hl-5">&quot;delay&quot;</span><span class="hl-4">,</span><br/><span class="hl-4">    </span><span class="hl-9">type:</span><span class="hl-4"> </span><span class="hl-5">&quot;lin&quot;</span><span class="hl-4">,</span><br/><span class="hl-4">    </span><span class="hl-9">minValue:</span><span class="hl-4"> </span><span class="hl-10">100</span><span class="hl-4">,</span><br/><span class="hl-4">    </span><span class="hl-9">maxValue:</span><span class="hl-4"> </span><span class="hl-10">500</span><span class="hl-4">,</span><br/><span class="hl-4">    </span><span class="hl-9">defaultValue:</span><span class="hl-4"> </span><span class="hl-10">200</span><span class="hl-4">,</span><br/><span class="hl-4">  },</span><br/><span class="hl-4">]</span><br/><br/><span class="hl-6">function</span><span class="hl-4"> </span><span class="hl-11">HandleMIDI</span><span class="hl-4">(</span><span class="hl-9">e</span><span class="hl-4">: </span><span class="hl-8">NoteOn</span><span class="hl-4"> | </span><span class="hl-8">NoteOff</span><span class="hl-4">) {</span><br/><span class="hl-4">  </span><span class="hl-9">e</span><span class="hl-4">.</span><span class="hl-11">send</span><span class="hl-4">()</span><br/><br/><span class="hl-4">  </span><span class="hl-12">if</span><span class="hl-4"> (</span><span class="hl-9">e</span><span class="hl-4"> </span><span class="hl-6">instanceof</span><span class="hl-4"> </span><span class="hl-8">NodeOn</span><span class="hl-4">) {</span><br/><span class="hl-4">    </span><span class="hl-6">const</span><span class="hl-4"> </span><span class="hl-7">echo</span><span class="hl-4"> = </span><span class="hl-6">new</span><span class="hl-4"> </span><span class="hl-11">NoteOn</span><span class="hl-4">()</span><br/><span class="hl-4">    </span><span class="hl-9">echo</span><span class="hl-4">.</span><span class="hl-11">sendAfterMilliseconds</span><span class="hl-4">(</span><span class="hl-11">GetParameter</span><span class="hl-4">(</span><span class="hl-5">&quot;delay&quot;</span><span class="hl-4">))</span><br/><span class="hl-4">  }</span><br/><span class="hl-4">}</span>
+</code><button>Copy</button></pre>
+<a id="md:install" class="tsd-anchor"></a><h3><a href="#md:install">install</a></h3><p>Create a <code>tsconfig.json</code> withe following compiler options:</p>
+<pre><code class="language-json"><span class="hl-4">{</span><br/><span class="hl-4">  </span><span class="hl-13">&quot;compilerOptions&quot;</span><span class="hl-4">: {</span><br/><span class="hl-4">    </span><span class="hl-13">&quot;outDir&quot;</span><span class="hl-4">: </span><span class="hl-5">&quot;&lt;where you want your scripts written out&gt;&quot;</span><span class="hl-4">,</span><br/><span class="hl-4">    </span><span class="hl-13">&quot;target&quot;</span><span class="hl-4">: </span><span class="hl-5">&quot;ES6&quot;</span><span class="hl-4">,</span><br/><span class="hl-4">    </span><span class="hl-13">&quot;skipLibCheck&quot;</span><span class="hl-4">: </span><span class="hl-6">true</span><br/><span class="hl-4">  },</span><br/><span class="hl-4">  </span><span class="hl-13">&quot;include&quot;</span><span class="hl-4">: [</span><span class="hl-5">&quot;&lt;your source files&gt;&quot;</span><span class="hl-4">]</span><br/><span class="hl-4">}</span>
+</code><button>Copy</button></pre>
+<p>Install <code>logic-pro-types</code> as a devDependency of your project:</p>
+<pre><code><span class="hl-9">$</span><span class="hl-4"> </span><span class="hl-9">npm</span><span class="hl-4"> </span><span class="hl-9">install</span><span class="hl-4"> --</span><span class="hl-9">save</span><span class="hl-4">-</span><span class="hl-9">dev</span><span class="hl-4"> </span><span class="hl-9">logic</span><span class="hl-4">-</span><span class="hl-9">pro</span><span class="hl-4">-</span><span class="hl-9">types</span>
+</code><button>Copy</button></pre>
+<p>Then, in your typescript source files, reference the <code>logic-pro-types</code> types like:</p>
+<pre><code class="language-ts"><span class="hl-0">/// </span><span class="hl-1">&lt;</span><span class="hl-2">reference</span><span class="hl-0"> </span><span class="hl-3">types</span><span class="hl-4">=</span><span class="hl-5">&quot;logic-pro-types&quot;</span><span class="hl-0"> </span><span class="hl-1">/&gt;</span>
+</code><button>Copy</button></pre>
+<a id="md:api-docs" class="tsd-anchor"></a><h3><a href="#md:api-docs">api docs</a></h3><p>Browseable documentation can be found <a href="https://jeremyruppel.github.io/tslogic/">here</a>.</p>
+</div></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -35,10 +48,16 @@
 <ul>
 <li>
 <ul>
-<li><a href="#md:tslogic"><span>tslogic</span></a></li>
-<li><a href="#md:events"><span>Events</span></a></li></ul></li></ul></div></details></div>
+<li><a href="#md:logic-pro-types"><span>logic-<wbr/>pro-<wbr/>types</span></a></li>
+<li>
+<ul>
+<li><a href="#md:usage"><span>usage</span></a></li>
+<li>
+<ul>
+<li><a href="#md:install"><span>install</span></a></li>
+<li><a href="#md:api-docs"><span>api docs</span></a></li></ul></li></ul></li></ul></li></ul></div></details></div>
 <div class="site-menu">
-<nav class="tsd-navigation"><a href="index.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>tslogic</span></a>
+<nav class="tsd-navigation"><a href="index.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1"></use></svg><span>logic-pro-types</span></a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base=".">
 <li><a href="modules/events.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>events</a></li>
 <li><a href="modules/index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-2"></use></svg>index</a></li>

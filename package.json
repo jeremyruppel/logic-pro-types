@@ -6,7 +6,7 @@
   "types": "./types/index.d.ts",
   "scripts": {
     "docs": "typedoc types/*.d.ts",
-    "tsc": "tsc --noEmit types/index.d.ts"
+    "tsc": "tsc"
   },
   "files": [
     "types",
