@@ -13,12 +13,13 @@
     "README.md"
   ],
   "keywords": [
-    "logic",
-    "pro",
     "scripter",
-    "script"
+    "logic pro",
+    "logic pro x",
+    "logic pro scripter"
   ],
   "license": "ISC",
+  "repository": "github:jeremyruppel/logic-pro-types",
   "prettier": {
     "semi": false
   },
