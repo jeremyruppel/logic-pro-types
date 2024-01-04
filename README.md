@@ -21,7 +21,7 @@ const PluginParameters: PluginParameters = [
 function HandleMIDI(e: NoteOn | NoteOff) {
   e.send()
 
-  if (e instanceof NodeOn) {
+  if (e instanceof NoteOn) {
     const echo = new NoteOn()
     echo.sendAfterMilliseconds(GetParameter("delay"))
   }
@@ -30,7 +30,7 @@ function HandleMIDI(e: NoteOn | NoteOff) {
 
 ### install
 
-Create a `tsconfig.json` withe following compiler options:
+Create a `tsconfig.json` with the following compiler options:
 
 ```json
 {
