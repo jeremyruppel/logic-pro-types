@@ -1,6 +1,6 @@
 # logic-pro-types
 
-TypeScript type defitions for Logic Pro' Scripter.
+TypeScript type definitions for Logic Pro's Scripter.
 
 ### usage
 
