@@ -1,6 +1,6 @@
 {
   "name": "logic-pro-types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Type definitions Logic Pro's Scripter",
   "author": "Jeremy Ruppel",
   "types": "./types/index.d.ts",
