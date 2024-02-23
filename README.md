@@ -43,19 +43,19 @@ Create a `tsconfig.json` with the following compiler options:
 }
 ```
 
-Install `logic-pro-types` as a devDependency of your project:
+Install `typescript` and `logic-pro-types` devDependencies of your project:
 
 ```
-$ npm install --save-dev logic-pro-types
+$ npm install --save-dev typescript logic-pro-types
 ```
 
-Then, in your typescript source files, reference the `logic-pro-types` types like:
+Then, in your .ts source files, reference the `logic-pro-types` types like:
 
 ```ts
 /// <reference types="logic-pro-types" />
 ```
 
-### api docs
+### TypeScript API Docs
 
 Browseable documentation can be found [here][docs].
 
