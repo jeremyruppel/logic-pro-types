@@ -24,7 +24,7 @@
     "semi": false
   },
   "devDependencies": {
-    "typedoc": "^0.25.2",
-    "typescript": "^5.2.2"
+    "typedoc": "^0.28.20",
+    "typescript": "6.0.x"
   }
 }

@@ -8,22 +8,25 @@ Now you can do this, complete with type hints:
 
 ```ts
 /// <reference types="logic-pro-types" />
-const PluginParameters: PluginParameters = [
+
+var PluginParameters: PluginParameters = [
   {
-    name: "delay",
+    name: "Millisecond Delay",
     type: "lin",
-    minValue: 100,
-    maxValue: 500,
-    defaultValue: 200,
+    minValue: 0,
+    maxValue: 200,
+    defaultValue: 100,
   },
 ]
-
+/**
+ * Sends a note after a random delay between 0 and 100 milliseconds.
+ */
 function HandleMIDI(e: NoteOn | NoteOff) {
-  e.send()
-
   if (e instanceof NoteOn) {
-    const echo = new NoteOn()
-    echo.sendAfterMilliseconds(GetParameter("delay"))
+    // original note on
+    e.send()
+    // additional note ons with random delay
+    e.sendAfterMilliseconds(Math.random() * GetParameter("Millisecond Delay"))
   }
 }
 ```
